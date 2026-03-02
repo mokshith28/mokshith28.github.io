@@ -111,15 +111,24 @@
                   />
                   <image
                     class="home__blob-img"
-                    x="-79"
-                    y="-46"
+                    x="-7"
+                    y="-10"
                     xlink:href="assets/img/Pro.jpg"
                   />
                 </g>
               </svg>
             </div>
+          <!-- Confetti decorations -->
+          <div class="home__decorations" aria-hidden="true">
+            <svg width="28" height="28" style="position:absolute;top:12%;right:8%;" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="24" height="24" rx="5" fill="#FBBF24" stroke="#1E293B" stroke-width="2.5"/></svg>
+            <svg width="22" height="22" style="position:absolute;top:55%;right:0%;" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="9" fill="#F472B6" stroke="#1E293B" stroke-width="2.5"/></svg>
+            <svg width="24" height="24" style="position:absolute;bottom:10%;left:5%;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="12,2 22,22 2,22" fill="#34D399" stroke="#1E293B" stroke-width="2.5" stroke-linejoin="round"/></svg>
+            <svg width="18" height="18" style="position:absolute;top:4%;left:30%;" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" r="7" fill="#8B5CF6" stroke="#1E293B" stroke-width="2"/></svg>
+            <svg width="20" height="20" style="position:absolute;bottom:25%;right:20%;" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="16" height="16" rx="8" fill="#FBBF24" stroke="#1E293B" stroke-width="2"/></svg>
+          </div>
+
             <div class="home__data">
-              <h1 class="home__title">I'm Mokshith P B</h1>
+              <h1 class="home__title">I'm <br> <span>Mokshith P B</span></h1>
               <h3 class="home__subtitle">CSE Student</h3>
               <p class="home__description">
                 A third-year undergraduate engineering student at
@@ -127,25 +136,17 @@
                   >Vivekananda College of Engineering and technology</strong
                 >, Puttur.
               </p>
-              <a href="#contact" class="button button--flex">
+              <a href="#contact" class="button button--flex button--contact">
                 Contact me<i class="uil uil-message button__icon"></i>
               </a>
             </div>
-          </div>
-
-          <div class="home__scroll">
-            <a href="#about" class="home__scroll-button button--flex">
-              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-              <span class="home__scroll-name">Scroll down</span>
-              <i class="uil uil-arrow-down home__scroll-arrow"></i>
-            </a>
           </div>
         </div>
       </section>
 
       <!--======================= About========================-->
 
-      <section class="about section" id="about">
+      <section class="about section section section-center" id="about">
         <h2 class="section__title">About Me</h2>
         <span class="section__subtitle">My introduction</span>
 
@@ -190,12 +191,12 @@
 
       <!--===================== SKILLS =====================-->
 
-      <section class="skills section" id="skills">
+      <section class="skills section section-center" id="skills">
         <h2 class="section__title">Skills</h2>
         <span class="section__subtitle">My technical level</span>
 
         <div class="skills__container container grid">
-          <div>
+          <div class="skills-first-column">
             <!--==================== Skill 1 =================-->
             <div class="skills__content skills__open">
               <div class="skills__header">
@@ -338,7 +339,7 @@
       <!--==================== Qualifications ==================-->
 
       <section
-        class="qualification__section service__section"
+        class="section section-center"
         id="qualification"
       >
         <h2 class="section__title">Qualification</h2>
@@ -566,7 +567,7 @@
       </section>
 
 <!--=================== Portfolio ===================-->
-      <section class="portfolio section" id="portfolio">
+      <section class="portfolio section section-center" id="portfolio">
         <h2 class="section__title">Projects</h2>
         <span class="section__subtitle">Most recent work</span>
 
@@ -650,7 +651,7 @@
       </section>
 
       <!--===================== Contact Me =====================-->
-      <section class="contact section" id="contact">
+      <section class="contact section section-center" id="contact">
         <h2 class="section__title">Contact Me</h2>
         <span class="section__subtitle">Get in touch</span>
 
