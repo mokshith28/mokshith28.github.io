@@ -198,7 +198,7 @@
         <div class="skills__container container grid">
           <div class="skills-first-column">
             <!--==================== Skill 1 =================-->
-            <div class="skills__content skills__open">
+            <div class="skills__content skills__close">
               <div class="skills__header">
                 <i class="fas fa-pencil-ruler skills__icon"></i>
 
@@ -283,7 +283,7 @@
 
           <div>
             <!--==================== Skill 3 =================-->
-            <div class="skills__content skills__close">
+            <div class="skills__content skills__open">
               <div class="skills__header">
                 <i class="fas fa-swatchbook skills__icon"></i>
                 <div>
@@ -338,316 +338,188 @@
 
       <!--==================== Qualifications ==================-->
 
-      <section
-        class="section section-center"
-        id="qualification"
-      >
+      <section class="qualification__section section section-center" id="qualification">
         <h2 class="section__title">Qualification</h2>
         <span class="section__subtitle">My personal journey</span>
 
-        <div
-          class="qualification__container container grid services__container"
-        >
-          <div class="qualification__tabs">
-            <div
-              class="qualification__button button--flex qualification__active"
-              data-target="#education"
-            >
-              <i class="uil uil-graduation-cap qualification__icon"></i>
-              Education
+        <div class="qual__timeline container">
+
+          <!-- SSLC -->
+          <div class="qual__entry qual__entry--left">
+            <div class="qual__card">
+              <div class="qual__card-top">
+                <span class="qual__num">01</span>
+                <span class="qual__year-badge qual__year-badge--amber">2020</span>
+              </div>
+              <div class="qual__icon-wrap qual__icon-wrap--amber">
+                <i class="uil uil-book-open"></i>
+              </div>
+              <h3 class="qual__title">SSLC</h3>
+              <p class="qual__school">G.E.M.S High School</p>
+              <div class="qual__date">
+                <i class="uil uil-calendar-alt"></i> Class 10 &mdash; 2020
+              </div>
+              <span class="qual__score qual__score--amber">Scored 88%</span>
+              <span class="button button--flex button--small button--link services__button">
+                View Details <i class="uil uil-arrow-right button__icon"></i>
+              </span>
+            </div>
+            <div class="qual__node-wrap">
+              <span class="qual__dot qual__dot--amber"></span>
+            </div>
+            <div class="qual__spacer"></div>
+          </div>
+
+          <!-- PUC -->
+          <div class="qual__entry qual__entry--right">
+            <div class="qual__spacer"></div>
+            <div class="qual__node-wrap">
+              <span class="qual__dot qual__dot--pink"></span>
+            </div>
+            <div class="qual__card">
+              <div class="qual__card-top">
+                <span class="qual__num">02</span>
+                <span class="qual__year-badge qual__year-badge--pink">2022</span>
+              </div>
+              <div class="qual__icon-wrap qual__icon-wrap--pink">
+                <i class="uil uil-graduation-cap"></i>
+              </div>
+              <h3 class="qual__title">PUC</h3>
+              <p class="qual__school">Ambhika Vidhyalaya Pre University College</p>
+              <div class="qual__date">
+                <i class="uil uil-calendar-alt"></i> Class 12 &mdash; 2022
+              </div>
+              <span class="qual__score qual__score--pink">Scored 95%</span>
+              <span class="button button--flex button--small button--link services__button">
+                View Details <i class="uil uil-arrow-right button__icon"></i>
+              </span>
             </div>
           </div>
 
-          <div class="qualification__sections">
-            <!--====== Qualification Content 1 ======-->
-            <div
-              class="qualification__content qualifiation__active services__content"
-              data-content
-              id="education"
-            >
-              <!--====== Qualification 1 ======-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">SSLC</h3>
-                  <span class="qualification__subtitle"
-                    >G.E.M.S <br />High School</span
-                  >
-                  <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i>
-                    - 2020
-                  </div>
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View More
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                  <div class="services__modal">
-                    <div class="services__modal-content">
-                      <h4 class="services__modal-title">
-                        Class 10th Summary :
-                      </h4>
-                      <i class="uil uil-times services__modal-close"></i>
-                      <ul class="services__modal-services grid">
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
-                          <p>
-                            Subjects studied: Science, Maths, English, Social
-                            Studies, Kannada, Hindi.
-                          </p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
-                          <p>Scored 88%</p>
-                        </li>
-                        <!-- <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
-                          <p>Came runners up in inter-school Ball Badminton</p>
-                        </li> -->
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
+          <!-- Engineering -->
+          <div class="qual__entry qual__entry--left">
+            <div class="qual__card">
+              <div class="qual__card-top">
+                <span class="qual__num">03</span>
+                <span class="qual__year-badge qual__year-badge--violet">2022 &ndash; 2026</span>
               </div>
-
-              <!--====== Qualification 2 ======-->
-              <div class="qualification__data">
-                <div></div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-                <div>
-                  <h3 class="qualification__title">PUC</h3>
-                  <span class="qualification__subtitle"
-                    >Ambhika Vidhyalaya <br />Pre University College</span
-                  >
-                  <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i>
-                    - 2022
-                  </div>
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View More
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                  <div class="services__modal">
-                    <div class="services__modal-content">
-                      <h4 class="services__modal-title">
-                        Class 12th Summary :
-                      </h4>
-                      <i class="uil uil-times services__modal-close"></i>
-                      <ul class="services__modal-services grid">
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
-                          <p>
-                            Subjects studied: Physics, Chemistry, Maths,
-                            English, Computer Science , Hindi.
-                          </p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
-                          <p>Scored 95%</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+              <div class="qual__icon-wrap qual__icon-wrap--violet">
+                <i class="uil uil-laptop"></i>
               </div>
-
-              <!--====== Qualification 3 ======-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">Engineering</h3>
-                  <span class="qualification__subtitle"
-                    >Vivekananda College of Engineering, Puttur</span
-                  >
-                  <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i>
-                    2022 - 2026
-                  </div>
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View More
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                  <div class="services__modal">
-                    <div class="services__modal-content">
-                      <h4 class="services__modal-title">College Summary :</h4>
-                      <i class="uil uil-times services__modal-close"></i>
-                      <ul class="services__modal-services grid">
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>
-                            Studying core subjects of IT including DSA, Embedded
-                            systems, Design analysis and algorithm, Operating
-                            systems, and Computer architecture .
-                          </p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>Scored an aggregate of 8.10 CGPA till now.</p>
-                        </li>
-                        <!-- <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>
-                            Student coordinator in media and publication club of
-                            the college.
-                          </p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>Club Advisor for GeekHub.</p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>
-                            CodeBlaze hackathon winners under open innovation.
-                          </p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>
-                            Runners in Edu-Vitality Hackathon in the track of AI
-                            in Education.
-                          </p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>
-                            Finalist in Dark Pattern Buster Hackathon conducted
-                            by Department of Consumer Affairs of India.
-                          </p>
-                        </li> -->
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <!--<span class="qualification__line"></span>-->
-                </div>
+              <h3 class="qual__title">B.E. Computer Science</h3>
+              <p class="qual__school">Vivekananda College of Engineering &amp; Technology, Puttur</p>
+              <div class="qual__date">
+                <i class="uil uil-calendar-alt"></i> Engineering &mdash; 2022 &ndash; 2026
               </div>
+              <span class="qual__score qual__score--violet">CGPA 8.15</span>
+              <span class="button button--flex button--small button--link services__button">
+                View Details <i class="uil uil-arrow-right button__icon"></i>
+              </span>
             </div>
+            <div class="qual__node-wrap">
+              <span class="qual__dot qual__dot--violet"></span>
+            </div>
+            <div class="qual__spacer"></div>
           </div>
+
         </div>
+        <!-- end qual__timeline -->
       </section>
 
 <!--=================== Portfolio ===================-->
-      <section class="portfolio section section-center" id="portfolio">
+      <section class="portfolio section" id="portfolio">
         <h2 class="section__title">Projects</h2>
         <span class="section__subtitle">Most recent work</span>
 
-        <div class="portfolio__container container swiper-container">
-          <div class="swiper-wrapper">
-            <!-- ------------------------portfollio 1-------------------- -->
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/Project1.png" class="portfolio__img" />
+        <div class="proj__outer container">
+          <div class="portfolio__container swiper-container">
+            <div class="swiper-wrapper">
 
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">
-                  Interactive Algorithm Visualizing Web App
-                </h3>
-                <p class="portfolio__description">
-                 An interactive web-based visualizer that helps users understand the working of key algorithms like Sorting, Searching, Minimum Spanning Tree (MST), and Shortest Path. Ideal for students and learners who want to strengthen their understanding of Data Structures and Algorithms through animation and interaction.
-                </p>
-                <a
-                  href="https://github.com/mokshith28/Mini-Project"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                  rel="noopener noreferrer" 
-                >
-                  GitHub Repository
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
-                <a
-                  href="https://mokshith28.github.io/Mini-Project/"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                  rel="noopener noreferrer" 
-                >
-                  See Live
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
+              <!-- ───────── Project 1 ───────── -->
+              <div class="swiper-slide">
+                <article class="proj__card proj__card--amber">
+
+                  <div class="proj__visual">
+                    <span class="proj__bg-num" aria-hidden="true">01</span>
+                    <div class="proj__img-frame">
+                      <img src="assets/img/Project1.png" alt="Algorithm Visualizer screenshot" class="proj__img" />
+                    </div>
+                  </div>
+
+                  <div class="proj__body">
+                    <div class="proj__header">
+                      <span class="proj__badge proj__badge--amber">Featured Project</span>
+                      <span class="proj__idx">01 / 02</span>
+                    </div>
+                    <h3 class="proj__title">Interactive Algorithm Visualizing Web App</h3>
+                    <p class="proj__desc">An interactive web-based visualizer that helps users understand the working of key algorithms like Sorting, Searching, Minimum Spanning Tree (MST), and Shortest Path. Ideal for learners who want to strengthen their understanding of DSA through animation and interaction.</p>
+                    <ul class="proj__tags">
+                      <li class="proj__tag">HTML</li>
+                      <li class="proj__tag">CSS</li>
+                      <li class="proj__tag">JavaScript</li>
+                      <li class="proj__tag">Algorithms</li>
+                    </ul>
+                    <div class="proj__links">
+                      <a href="https://github.com/mokshith28/Mini-Project" class="button button--flex button--small proj__link-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="uil uil-github proj__link-icon"></i> GitHub
+                      </a>
+                      <a href="https://mokshith28.github.io/Mini-Project/" class="button button--flex button--small button--white proj__link-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="uil uil-external-link-alt proj__link-icon"></i> Live Demo
+                      </a>
+                    </div>
+                  </div>
+
+                </article>
               </div>
-            </div>
-            <!-- ------------------------portfollio 2-------------------- -->
 
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/Project2.png" class="portfolio__img" />
+              <!-- ───────── Project 2 ───────── -->
+              <div class="swiper-slide">
+                <article class="proj__card proj__card--pink">
 
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">
-                  Simple Recipe Finder
-                </h3>
-                <p class="portfolio__description">
-                  A clean and responsive React web app to search for recipes using the Forkify API. Instantly explore thousands of food recipes and filter them by maximum cooking time to find quick and easy meals.
-                </p>
-                <a
-                  href="https://github.com/mokshith28/Smart-Recipe-Finder"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                  rel="noopener noreferrer" 
-                >
-                  GitHub Repository
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
-                <a
-                  href="https://resilient-sprite-c63a3f.netlify.app/"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                  rel="noopener noreferrer" 
-                >
-                  See Live
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
+                  <div class="proj__visual">
+                    <span class="proj__bg-num" aria-hidden="true">02</span>
+                    <div class="proj__img-frame">
+                      <img src="assets/img/Project2.png" alt="Simple Recipe Finder screenshot" class="proj__img" />
+                    </div>
+                  </div>
+
+                  <div class="proj__body">
+                    <div class="proj__header">
+                      <span class="proj__badge proj__badge--pink">Featured Project</span>
+                      <span class="proj__idx">02 / 02</span>
+                    </div>
+                    <h3 class="proj__title">Simple Recipe Finder</h3>
+                    <p class="proj__desc">A clean and responsive React web app to search for recipes using the Forkify API. Instantly explore thousands of food recipes and filter them by maximum cooking time to find quick and easy meals.</p>
+                    <ul class="proj__tags">
+                      <li class="proj__tag">React</li>
+                      <li class="proj__tag">JavaScript</li>
+                      <li class="proj__tag">Forkify API</li>
+                      <li class="proj__tag">CSS</li>
+                    </ul>
+                    <div class="proj__links">
+                      <a href="https://github.com/mokshith28/Smart-Recipe-Finder" class="button button--flex button--small proj__link-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="uil uil-github proj__link-icon"></i> GitHub
+                      </a>
+                      <a href="https://resilient-sprite-c63a3f.netlify.app/" class="button button--flex button--small button--white proj__link-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="uil uil-external-link-alt proj__link-icon"></i> Live Demo
+                      </a>
+                    </div>
+                  </div>
+
+                </article>
               </div>
-            </div>
-          </div>
 
-          <!-- add arrows -->
-          <div class="swiper-button-next">
-            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-          </div>
+            </div><!-- /swiper-wrapper -->
+            <div class="swiper-pagination"></div>
+          </div><!-- /portfolio__container -->
+
           <div class="swiper-button-prev">
             <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
           </div>
-          <!-- add pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+        </div><!-- /proj__outer -->
       </section>
 
       <!--===================== Contact Me =====================-->
@@ -775,6 +647,58 @@
     <a href="#" class="scrollup" id="scroll-up">
       <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
+
+    <!-- Qualification Modals (body-level so position:fixed escapes transformed ancestors) -->
+    <div class="services__modal">
+      <div class="services__modal-content">
+        <h4 class="services__modal-title">Class 10th Summary</h4>
+        <i class="uil uil-times services__modal-close"></i>
+        <ul class="services__modal-services grid">
+          <li class="services__modal-service">
+            <i class="uil uil-check-circle services__modal-icon"></i>
+            <p>Subjects: Science, Maths, English, Social Studies, Kannada, Hindi.</p>
+          </li>
+          <li class="services__modal-service">
+            <i class="uil uil-check-circle services__modal-icon"></i>
+            <p>Scored 88%</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="services__modal">
+      <div class="services__modal-content">
+        <h4 class="services__modal-title">Class 12th Summary</h4>
+        <i class="uil uil-times services__modal-close"></i>
+        <ul class="services__modal-services grid">
+          <li class="services__modal-service">
+            <i class="uil uil-check-circle services__modal-icon"></i>
+            <p>Subjects: Physics, Chemistry, Maths, English, Computer Science, Hindi.</p>
+          </li>
+          <li class="services__modal-service">
+            <i class="uil uil-check-circle services__modal-icon"></i>
+            <p>Scored 95%</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="services__modal">
+      <div class="services__modal-content">
+        <h4 class="services__modal-title">College Summary</h4>
+        <i class="uil uil-times services__modal-close"></i>
+        <ul class="services__modal-services grid">
+          <li class="services__modal-service">
+            <i class="uil uil-check-circle services__modal-icon"></i>
+            <p>Core subjects: DSA, Embedded Systems, Design Analysis &amp; Algorithms, Operating Systems, Computer Architecture.</p>
+          </li>
+          <li class="services__modal-service">
+            <i class="uil uil-check-circle services__modal-icon"></i>
+            <p>Aggregate CGPA of 8.15 till date.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
     <script
