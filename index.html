@@ -427,7 +427,7 @@
       </section>
 
 <!--=================== Portfolio ===================-->
-      <section class="portfolio section" id="portfolio">
+      <section class="portfolio section section-center" id="portfolio">
         <h2 class="section__title">Projects</h2>
         <span class="section__subtitle">Most recent work</span>
 
@@ -527,72 +527,79 @@
         <h2 class="section__title">Contact Me</h2>
         <span class="section__subtitle">Get in touch</span>
 
-        <div class="contact__container container grid">
-          <div>
-            <div class="contact__information">
-              <i class="uil uil-calling contact__icon"></i>
+        <div class="contact__wrapper container">
 
-              <div>
-                <h3 class="contact__title">Contact Me</h3>
-                <span class="contact__subtitle"
-                  ><a href="tel:6362243314"></a>6361346503</span
-                >
-              </div>
+          <!-- ── Left Info Panel ── -->
+          <div class="contact__panel">
+            <div class="contact__panel-header">
+              <h3 class="contact__panel-heading">Let's Talk</h3>
+              <p class="contact__panel-sub">I'm open to opportunities, collaborations, and conversations. Drop me a message!</p>
             </div>
 
-            <div class="contact__information">
-              <i class="uil uil-envelope-minus contact__icon"></i>
+            <ul class="contact__info-list">
+              <li class="contact__info-item">
+                <div class="contact__info-icon contact__info-icon--violet">
+                  <i class="uil uil-calling"></i>
+                </div>
+                <div>
+                  <span class="contact__info-label">Phone</span>
+                  <span class="contact__info-value">6361346503</span>
+                </div>
+              </li>
+              <li class="contact__info-item">
+                <div class="contact__info-icon contact__info-icon--pink">
+                  <i class="uil uil-envelope-minus"></i>
+                </div>
+                <div>
+                  <span class="contact__info-label">Email</span>
+                  <span class="contact__info-value">mokshithpb@gmail.com</span>
+                </div>
+              </li>
+              <li class="contact__info-item">
+                <div class="contact__info-icon contact__info-icon--amber">
+                  <i class="uil uil-map-marker"></i>
+                </div>
+                <div>
+                  <span class="contact__info-label">Location</span>
+                  <span class="contact__info-value">Puttur, Karnataka, India</span>
+                </div>
+              </li>
+            </ul>
 
-              <div>
-                <h3 class="contact__title">Email</h3>
-                <span class="contact__subtitle">mokshithpb@gmail.com</span>
-              </div>
-            </div>
-
-            <div class="contact__information">
-              <i class="uil uil-map-marker contact__icon"></i>
-
-              <div>
-                <h3 class="contact__title">Location</h3>
-                <span class="contact__subtitle">Puttur, Karnataka, India</span>
-              </div>
+            <!-- Decorative floating shapes -->
+            <div class="contact__panel-deco" aria-hidden="true">
+              <span class="contact__deco contact__deco--circle"></span>
+              <span class="contact__deco contact__deco--square"></span>
+              <span class="contact__deco contact__deco--triangle"></span>
             </div>
           </div>
 
-          <form action="" class="contact__form grid">
-            <div class="contact__inputs grid">
-              <div class="contact__content">
-                <label for="" class="content__label">Name</label>
-                <input type="text" class="contact__input" />
+          <!-- ── Right Form Card ── -->
+          <div class="contact__form-card">
+            <form action="" class="contact__form-inner">
+              <div class="contact__row">
+                <div class="contact__field">
+                  <label class="contact__label">Your Name</label>
+                  <input type="text" class="contact__input" placeholder="e.g. John Doe" />
+                </div>
+                <div class="contact__field">
+                  <label class="contact__label">Email Address</label>
+                  <input type="email" class="contact__input" placeholder="e.g. john@example.com" />
+                </div>
               </div>
-
-              <div class="contact__content">
-                <label for="" class="content__label">Email</label>
-                <input type="Email" class="contact__input" />
+              <div class="contact__field">
+                <label class="contact__label">Message</label>
+                <textarea class="contact__input contact__textarea" rows="5" placeholder="Write your message here..."></textarea>
               </div>
-            </div>
-
-            <div class="contact__content">
-              <label for="" class="content__label">Message</label>
-              <textarea
-                name=""
-                id=""
-                cols="0"
-                rows="7"
-                class="contact__input"
-              ></textarea>
-            </div>
-
-            <div>
               <a
-                href=" mailto: mokshithpb@gmail.com?subject=Testing out mailto! &body=This is only a test!"
-                class="button button--flex"
+                href="mailto:mokshithpb@gmail.com?subject=Portfolio%20Contact"
+                class="contact__send-btn button button--flex"
               >
-                Send Message
-                <i class="uil uil-message button__icon"></i>
+                Send Message <i class="uil uil-telegram-alt button__icon"></i>
               </a>
-            </div>
-          </form>
+            </form>
+          </div>
+
         </div>
       </section>
     </main>
