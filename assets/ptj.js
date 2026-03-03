@@ -282,6 +282,7 @@ if (!noMotion) {
       // Card slides in
       gsap.to(cards[i], {
         opacity: 1, x: 0, duration: 0.65, ease: "back.out(1.5)",
+        clearProps: "transform",
       });
     }
 

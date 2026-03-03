@@ -987,7 +987,6 @@ img {
   border-radius: 50%;
   border: 2.5px solid var(--fg);
   background: var(--accent);
-  box-shadow: 3px 3px 0px var(--fg);
   flex-shrink: 0;
   position: relative;
   z-index: 1;
@@ -1341,13 +1340,19 @@ img {
   transition: box-shadow 0.25s var(--ease-bounce), transform 0.25s var(--ease-bounce);
 }
 
+.proj__card:hover {
+  cursor: grab;
+}
+
+.proj__card:active {
+  cursor: grabbing;
+}
+
 .proj__card--amber:hover {
-  transform: translate(-3px, -3px) rotate(-0.5deg);
   box-shadow: 9px 9px 0px 0px var(--tertiary);
 }
 
 .proj__card--pink:hover {
-  transform: translate(-3px, -3px) rotate(-0.5deg);
   box-shadow: 9px 9px 0px 0px var(--secondary);
 }
 
@@ -1389,8 +1394,6 @@ img {
 .proj__img-frame {
   position: relative;
   z-index: 1;
-  width: 100%;
-  max-width: 340px;
 }
 
 .proj__img-frame::before {
@@ -1413,7 +1416,7 @@ img {
 }
 
 .proj__img {
-  width: 100%;
+  max-height: 370px;
   display: block;
   border-radius: var(--radius-md);
   border: 2.5px solid var(--fg);
