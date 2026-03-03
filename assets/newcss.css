@@ -913,6 +913,38 @@ img {
   padding: 1rem 0 2rem;
 }
 
+/* Traveling dot */
+.qual__travel-dot {
+  position: absolute;
+  left: calc(50% - 11px);
+  /* centred without transform so GSAP won't clobber it */
+  top: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2.5px solid var(--fg);
+  box-shadow: 0 0 0 5px var(--first-color-lighter), 3px 3px 0 var(--fg);
+  z-index: 3;
+  pointer-events: none;
+  will-change: top, background;
+  opacity: 0;
+}
+
+/* Burst ring that fires when the dot arrives at a node */
+.qual__burst {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2.5px solid var(--accent);
+  pointer-events: none;
+  z-index: 4;
+  opacity: 0;
+  /* centred the same way — GSAP will handle top, xPercent, yPercent */
+  left: calc(50% - 11px);
+}
+
 /* Center spine — thick dashed vertical line */
 .qual__timeline::before {
   content: "";
